@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой Веб-Сайт</title>
+<style>
+    /* Стили для Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header__logo {
+    font-size: 24px;
+}
+
+.header__nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header__nav li {
+    margin-left: 10px;
+}
+
+.header__nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Стили для Sidebar */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стили для контейнера с основным содержимым */
+.container {
+    display: flex;
+}
+
+/* Стили для основного содержимого */
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Дополнительные стилизации */
+.container {
+    margin: 20px;
+}
+
+.header__logo h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.header__nav a {
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.header__nav a:hover {
+    color: #000;
+}
+
+.sidebar ul {
+    padding-left:40px;
+}
+
+.sidebar li {
+margin-bottom: 10px;
+opacity: 0.8;
+transition: opacity 0.3s ease;
+}
+
+.sidebar li:hover {
+opacity: 1;
+}
+
+.content h2 {
+font-size: 24px;
+margin-top: 0;
+}
+
+.content p {
+line-height: 1.5;
+color: #666;
+}
+
+
+
+</style>    
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <h1>Логотип</h1>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Боковая панель</h2>
+            <ul>
+                <li><a href="#">Ссылка 1</a></li>
+                <li><a href="#">Ссылка 2</a></li>
+                <li><a href="#">Ссылка 3</a></li>
+                <li><a href="#">Ссылка 4</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Основное содержимое</h2>
+            <p>Текст вашего веб-сайта здесь...</p>
+        </main>
+    </div>
+</body>
+</html>

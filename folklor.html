@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+    <style>
+        body{
+    display:flex;
+    margin:0;
+    padding:0;
+
+
+}
+
+.container{
+  width: 1400px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  
+}
+
+.container .card{
+  position: relative;
+}
+
+.container .card .face{
+  width:350px;
+  height: 200px;
+  transition:.4s;
+  
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+  transform: translateY(0);
+  cursor: pointer;
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px rgb(190, 163, 190),
+    
+   
+}
+
+
+.container .card .face.face1 .content{
+  opacity: .9;
+  transition:  0.5s;
+  text-align: center;
+  
+   
+  
+  
+ 
+
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+  cursor: pointer;
+ 
+}
+
+.container .card .face.face1 .content i{
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+   
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 23px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+
+}
+
+.container .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container .card .face.face2{
+   position: relative;
+    display: flex;
+    background: white;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 40px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+  height: 100px;
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+    cursor: pointer;
+
+
+}
+
+.container .card .face.face2 a{
+  font-size: 20px;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+.content p{
+    font-size: 15px;
+}
+.container .card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.face.face2{
+    height: 30px;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="flex-dive">
+            <div class="nav-left flex-dive" > 
+                <img src="images/menu.png" class="menu-icon">
+                <img src="images/qazaq life2.png" class="logo">
+            </div>
+            <div class="nav-middle flex-dive">
+                <dive class="search-box flex-div">
+                    <input type = "text" placeholder="Search">
+                    <img src="images/search.png">
+                </dive>
+                <img src="images/voice-search.png" class="mic-icon">
+            </div>
+            <div class="nav-right flex-dive">
+                <img src="images/upload.png">
+                <img src="images/more.png">
+                <img src="images/notification.png">
+            </div>
+        </nav>
+ </header>
+ <sidebar>
+    <div class = "sidebar">
+        <div class="shortcut-links">
+            <a href="index.html"><img src="images/home.png"><p>Басты бет</p></a>
+            <a href="index3.html"><img src="images/explore.png"><p>Жазушылар</p></a>
+            <a href="index2.html"><img src="images/library.png"><p>Кітаптар</p></a>
+            <a href=""><img src="images/history.png"><p>Ғасыр жыры</p></a>
+            <a href=""><img src="images/messages.png"><p>Ақпарат</p></a>
+            <a href=""><img src="images/subscriprion.png"><p>Жазылушылар</p></a>
+
+            <a href=""><img src="images/show-more.png"><p>Тағы да көру</p></a>
+            <hr>
+        </div>
+        <div class="subscribed-list" style="margin-top: 20px" >
+            <a href=""><img src="images/Jack.png" style="z-index:999"><p style="z-index:999">А.Құнанбаев</p></a>
+            <a href=""><img src="images/simon.png" style="z-index:999"><p style="z-index:999">М.Дулатұлы</p></a>
+            <a href=""><img src="images/tom.png" style="z-index:999"><p style="z-index:999">М.Жұмабаев</p></a>
+            <a href=""><img src="images/megan.png" style="z-index:999"><p style="z-index:999">С.Сейфуллин</p></a>
+            <a href=""><img src="images/cameron.png" style="z-index:999"><p >Ш.Құдайберді</p></a>
+            
+        </div>
+    </div>
+</sidebar>
+
+
+
+<main style="margin: 60px;">
+        <h1 style="z-index: 9999;margin-left: 250px;margin-bottom: 50px;margin-top: 30px;"> Жұмбақтар</h1>
+
+      <div class="container" style="margin-top: -10px">
+
+         <div class="card" >
+            
+           <div class="face face1">
+             <div class="content">
+                   
+               <h3>Жердің жүзін шарлайсың
+                Онсыз еш жерге бармайсың
+                Көлікпен де, жаяу да
+                Саралайсың, таңдайсың.
+                </h3>
+             </div>
+           </div>
+           <div class="face face2">
+             <div class="content">
+               <a href="#" type="button">Жол</a>
+             </div>
+           </div>
+        </div>
+        
+        <div class="card">
+           <div class="face face1">
+             <div class="content">
+                      <h3>Көп болса алыстайсың
+                        мезетпен қашықтайсың
+                        Асықсаң аз болады
+                        Табасың мұны қайсысың?
+                        </h3>
+             </div>
+           </div>
+           <div class="face face2">
+             <div class="content">
+               <a href="#" type="button">Уақыт</a>
+             </div>
+           </div>
+        </div>
+        
+        
+        <div class="card">
+           <div class="face face1">
+             <div class="content">
+                <h3>Иісшіл - ит емес,
+                    Ұшады -құс емес.
+                    </h3>
+             </div>
+           </div>
+           <div class="face face2">
+             <div class="content">
+               <a href="#" type="button">Шыбын</a>
+             </div>
+           </div>
+        </div>
+
+        <div class="card" >
+            <div class="face face1">
+              <div class="content">
+                    
+                <h3>Ұстарамен алынбас,
+                    Ұйысып тұрған қалың шаш.
+                    </h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <a href="#" type="button">Егін</a>
+              </div>
+            </div>
+         </div>
+         
+         <div class="card">
+            <div class="face face1">
+              <div class="content">
+                       <h3>Дүниеде ақас бар бек жайлаған,
+                        Жанына адам барса ойбайлаған.
+                        Ақастың адам білер мінезі бар,
+                        Мінгесіп екі бала той тойлаған.
+                        </h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <a href="#" type="button">Түйе және оның өркеші</a>
+              </div>
+            </div>
+         </div>
+         
+         
+         <div class="card">
+            <div class="face face1">
+              <div class="content">
+                 <h3>Асты тас,
+                    Үсті тас,
+                    Ортасында шандыр бас.
+                    </h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <a href="#" type="button">Тасбақа</a>
+              </div>
+            </div>
+         </div>
+         <div class="card" >
+            <div class="face face1">
+              <div class="content">
+                    
+                <h3>Сатайын десем ауыр кілем,
+                    Сатпайын десем тәуір кілем.
+                    </h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <a href="#" type="button">Жер</a>
+              </div>
+            </div>
+         </div>
+         
+         <div class="card">
+            <div class="face face1">
+              <div class="content">
+                       <h3>Кішкене ғана тостаған
+                        Жер дүниені бастаған.
+                        </h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <a href="#" type="button">Көз
+                </a>
+              </div>
+            </div>
+         </div>
+         
+         
+         <div class="card">
+            <div class="face face1">
+              <div class="content">
+                 <h3>Өрнектеп, сәндеп,
+                    Тігістерін бүгетін.
+                    Солпысын жөндеп,
+                    Кім көйлек тігетін?
+                    </h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <a href="#" type="button">Тігінші
+                </a>
+              </div>
+            </div>
+         </div>
+        
+        
+
+    
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
